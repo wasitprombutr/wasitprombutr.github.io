@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wasit.10-xconsulting.com/sitemap.xml
