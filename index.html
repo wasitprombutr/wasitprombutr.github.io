@@ -38,7 +38,7 @@
       "@type": "ProfilePage",
       "url": "https://wasit.10-xconsulting.com/",
       "dateCreated": "2026-10-25T09:00:00+07:00",
-      "dateModified": "2026-11-13T09:00:00+07:00",
+      "dateModified": "2026-11-18T09:00:00+07:00",
       "inLanguage": [
         "th",
         "en"
@@ -399,6 +399,25 @@ footer p{margin:4px 0}
   .reg a.row{grid-template-columns:1fr}
   .reg .go{grid-row:auto;grid-column:1}
 }
+
+/* organization logos */
+.logo{position:relative;flex:none;width:40px;height:40px;border-radius:10px;background:var(--accent-soft);border:1px solid var(--line);color:var(--accent);display:grid;place-items:center;font:600 11px/1 "Noto Sans Thai",system-ui,sans-serif;letter-spacing:-.02em;overflow:hidden}
+.logo img{position:absolute;top:6px;left:6px;width:28px;height:28px;object-fit:contain;border-radius:6px;background:var(--accent-soft)}
+.logo img:not([src]){display:none}
+.reg a.row{grid-template-columns:40px 1fr auto;column-gap:14px}
+.reg a.row .logo{grid-column:1;grid-row:1/span 2;align-self:center}
+.reg .org,.reg .meta{grid-column:2}
+.reg .go{grid-column:3}
+.reg .note{padding-left:72px}
+h3.ph{display:flex;align-items:center;gap:10px}
+h3.ph .logo{width:32px;height:32px;font-size:10px}
+h3.ph .logo img{width:22px;height:22px;top:4px;left:4px}
+@media (max-width:600px){
+  .reg a.row{grid-template-columns:40px 1fr}
+  .reg a.row .logo{grid-row:1/span 3;align-self:start}
+  .reg .go{grid-column:2;grid-row:auto}
+  .reg .note{padding-left:18px}
+}
 </style>
 </head>
 <body>
@@ -481,17 +500,20 @@ footer p{margin:4px 0}
     <div class="group-title"><span data-l="th">ทะเบียนภาครัฐ</span><span data-l="en">Government registries</span></div>
     <ul class="reg">
       <li><a class="row" href="https://culture4sdgs.com/coach/view?id=c5eafead-405b-40a6-a3c0-5ba0cf123106" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">สวธ<img src="https://www.google.com/s2/favicons?domain=culture.go.th&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org"><span data-l="th">กรมส่งเสริมวัฒนธรรม กระทรวงวัฒนธรรม — Thailand Culture for SDGs</span><span data-l="en">Department of Cultural Promotion, Ministry of Culture — Thailand Culture for SDGs</span></span>
         <span class="meta"><span data-l="th">ที่ปรึกษาและผู้เชี่ยวชาญด้านการพัฒนาเมืองอย่างยั่งยืนในมิติด้านวัฒนธรรม (ร่วมกับสถาบันบัณฑิตพัฒนบริหารศาสตร์ NIDA)</span><span data-l="en">Advisor &amp; expert in culture-based sustainable urban development (with NIDA)</span></span>
         <span class="go"><span data-l="th">ดูหน้าทะเบียน ↗</span><span data-l="en">View ↗</span></span>
       </a></li>
       <li><a class="row" href="https://www.consultant.pdmo.go.th/index.php?mod=search&amp;route=consult" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">สบน<img src="https://www.google.com/s2/favicons?domain=pdmo.go.th&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org"><span data-l="th">ศูนย์ข้อมูลที่ปรึกษา สำนักงานบริหารหนี้สาธารณะ กระทรวงการคลัง</span><span data-l="en">Thai Consultant Database Center, Public Debt Management Office, Ministry of Finance</span> <span class="badge">Level 3</span></span>
         <span class="meta"><span data-l="th">ที่ปรึกษา นายวสิษฐ์ พรหมบุตร · เลขทะเบียนที่ปรึกษา <code>5782</code> · ระดับ 3</span><span data-l="en">Registered consultant Wasit Prombutr · Registration no. <code>5782</code> · Level 3</span></span>
         <span class="go"><span data-l="th">ระบบสืบค้น ↗</span><span data-l="en">Search system ↗</span></span>
       </a>
       <p class="note"><span data-l="th">จัดตั้งตามระเบียบสำนักนายกรัฐมนตรีว่าด้วยการพัสดุ พ.ศ. 2535 · ระบบไม่มีลิงก์ตรงไปยังรายการ โปรดค้นด้วยเลขทะเบียน 5782</span><span data-l="en">Established under the Prime Minister’s Office Regulation on Procurement B.E. 2535 (1992). No direct link; search by registration no. 5782.</span></p></li>
       <li><a class="row" href="https://coach.sme.go.th/Coach/Detail?id=401" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">สสว<img src="https://www.google.com/s2/favicons?domain=sme.go.th&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org"><span data-l="th">สำนักงานส่งเสริมวิสาหกิจขนาดกลางและขนาดย่อม (สสว.) — ทะเบียน SME Coach</span><span data-l="en">Office of SMEs Promotion (OSMEP) — SME Coach Registry</span></span>
         <span class="meta"><span data-l="th">โค้ช/ที่ปรึกษา · ด้านการบริหารจัดการ การผลิต และการรับรองมาตรฐาน · กลุ่มการผลิต การบริการ และเศรษฐกิจฐานราก</span><span data-l="en">Coach/consultant · management, production and standards certification · manufacturing, services and grassroots economy</span></span>
         <span class="go"><span data-l="th">ดูหน้าทะเบียน ↗</span><span data-l="en">View ↗</span></span>
@@ -501,21 +523,25 @@ footer p{margin:4px 0}
     <div class="group-title"><span data-l="th">การรับรองรายบุคคล</span><span data-l="en">Individual certifications &amp; memberships</span></div>
     <ul class="reg">
       <li><a class="row" href="https://get.mgscc.net/coach/dprombutr1" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">MG<img src="https://www.google.com/s2/favicons?domain=mgscc.net&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">Marshall Goldsmith Stakeholder Centered Coaching <span class="badge">Certified</span></span>
         <span class="meta">Certified Stakeholder Centered Coach</span>
         <span class="go"><span data-l="th">ดูหน้าทะเบียน ↗</span><span data-l="en">View ↗</span></span>
       </a></li>
       <li><a class="row" href="https://mlct.maxwellleadership.com/members/0ef05804/?v=1fdc0f893412" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">JM<img src="https://www.google.com/s2/favicons?domain=maxwellleadership.com&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">Maxwell Leadership Certified Team <span class="badge">Certified</span></span>
         <span class="meta"><span data-l="th">สมาชิกที่ได้รับการรับรอง (Certified Member)</span><span data-l="en">Certified Member</span></span>
         <span class="go"><span data-l="th">ดูหน้าทะเบียน ↗</span><span data-l="en">View ↗</span></span>
       </a></li>
       <li><a class="row" href="https://www.nlpuniversitypress.com/gtcsessions/listmem.php?memID=1581" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">NLPU<img src="https://www.google.com/s2/favicons?domain=nlpuniversitypress.com&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">NLP University (NLPU) <span class="badge">Master Trainer</span></span>
         <span class="meta"><span data-l="th">ทำเนียบ NLP Master Trainer (NLPU 2023)</span><span data-l="en">NLP Master Trainer directory (NLPU 2023)</span></span>
         <span class="go"><span data-l="th">ดูหน้าทะเบียน ↗</span><span data-l="en">View ↗</span></span>
       </a></li>
       <li><a class="row" href="https://www.associationforcoaching.com/members/?id=71594842&amp;terms=%22wasit%22" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">AC<img src="https://www.google.com/s2/favicons?domain=associationforcoaching.com&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">Association for Coaching (AC)</span>
         <span class="meta"><span data-l="th">รายชื่อสมาชิก</span><span data-l="en">Member directory</span></span>
         <span class="go"><span data-l="th">ดูหน้าทะเบียน ↗</span><span data-l="en">View ↗</span></span>
@@ -525,26 +551,31 @@ footer p{margin:4px 0}
     <div class="group-title"><span data-l="th">การรับรององค์กร (10X Consulting · Life Alignmentor · OKR Academy Thailand)</span><span data-l="en">Organizational accreditations</span></div>
     <ul class="reg">
       <li><a class="row" href="https://app.mentoringcenter.org/detailed-overview/?center=10x-consulting-20" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">IMC<img src="https://www.google.com/s2/favicons?domain=mentoringcenter.org&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">International Mentoring Center (IMC) <span class="badge">Accredited</span></span>
         <span class="meta"><span data-l="th">10X Consulting · ผู้จัดหลักสูตรที่ได้รับการรับรอง (Accredited Training) ด้านภาวะผู้นำ การโค้ชและเมนทอร์ และ OKR</span><span data-l="en">10X Consulting · Accredited Training provider: leadership, coaching &amp; mentoring, OKR programs</span></span>
         <span class="go"><span data-l="th">ดูหน้าทะเบียน ↗</span><span data-l="en">View ↗</span></span>
       </a></li>
       <li><a class="row" href="https://www.coaching-institutes.net/life-alignmentor/" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">ICI<img src="https://www.google.com/s2/favicons?domain=coaching-institutes.net&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">International Association of Coaching Institutes (ICI) <span class="badge">Accredited</span></span>
         <span class="meta"><span data-l="th">Life Alignmentor · สถาบันที่ได้รับการรับรอง (Experienced Institute)</span><span data-l="en">Life Alignmentor · Accredited institute (Experienced Institute)</span></span>
         <span class="go"><span data-l="th">ดูหน้าทะเบียน ↗</span><span data-l="en">View ↗</span></span>
       </a></li>
       <li><a class="row" href="https://www.nlp-institutes.net/life-alignmentor" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">IN<img src="https://www.google.com/s2/favicons?domain=nlp-institutes.net&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">International Association of NLP Institutes (IN) <span class="badge">Accredited</span></span>
         <span class="meta"><span data-l="th">Life Alignmentor · สถาบันที่ได้รับการรับรอง (Experienced Institute)</span><span data-l="en">Life Alignmentor · Accredited institute (Experienced Institute)</span></span>
         <span class="go"><span data-l="th">ดูหน้าทะเบียน ↗</span><span data-l="en">View ↗</span></span>
       </a></li>
       <li><a class="row" href="https://training.hypnosiscredentials.com/business-directory/?wpbdp_view=search&amp;kw=Life+Alignmentor" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">IHA<img src="https://www.google.com/s2/favicons?domain=hypnosiscredentials.com&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">International Hypnosis Association (IHA)</span>
         <span class="meta"><span data-l="th">Life Alignmentor · รายชื่อในทำเนียบธุรกิจ</span><span data-l="en">Life Alignmentor · Business directory listing</span></span>
         <span class="go"><span data-l="th">ดูหน้าทะเบียน ↗</span><span data-l="en">View ↗</span></span>
       </a></li>
       <li><a class="row" href="https://okrinstitute.org/okr-partners/" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">OKR<img src="https://www.google.com/s2/favicons?domain=okrinstitute.org&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">OKR Institute <span class="badge">Partner</span></span>
         <span class="meta"><span data-l="th">10X Consulting (Bronze Partner), Life Alignmentor และ OKR Academy Thailand ในรายชื่อพันธมิตร</span><span data-l="en">10X Consulting (Bronze Partner), Life Alignmentor and OKR Academy Thailand listed as partners</span></span>
         <span class="go"><span data-l="th">ดูหน้าทะเบียน ↗</span><span data-l="en">View ↗</span></span>
@@ -554,6 +585,7 @@ footer p{margin:4px 0}
     <div class="group-title"><span data-l="th">ทรัพย์สินทางปัญญา</span><span data-l="en">Intellectual property</span></div>
     <ul class="reg">
       <li><a class="row" href="https://sso.ipthailand.go.th/" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">DIP<img src="https://www.google.com/s2/favicons?domain=ipthailand.go.th&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org"><span data-l="th">กรมทรัพย์สินทางปัญญา กระทรวงพาณิชย์</span><span data-l="en">Department of Intellectual Property, Thailand</span></span>
         <span class="meta"><span data-l="th">เลขทะเบียน <code>211101438</code> · ครอบคลุมผลงานทุกชิ้นของ ดร.วสิษฐ์ พรหมบุตร</span><span data-l="en">Registration no. <code>211101438</code> · covers the complete body of Dr. Wasit Prombutr’s works</span></span>
         <span class="go"><span data-l="th">ระบบสืบค้น ↗</span><span data-l="en">Search system ↗</span></span>
@@ -564,11 +596,13 @@ footer p{margin:4px 0}
     <div class="group-title"><span data-l="th">หน้ารวมใบรับรองบนเว็บไซต์องค์กร</span><span data-l="en">Accreditation galleries</span></div>
     <ul class="reg">
       <li><a class="row" href="https://10-xconsulting.com/our-accreditations/" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">10X<img src="https://www.google.com/s2/favicons?domain=10-xconsulting.com&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">10X Consulting — Our Accreditations</span>
         <span class="meta"><span data-l="th">ใบรับรองด้าน Performance, Excellence, Mentoring, Leadership และการขึ้นทะเบียนภาครัฐ</span><span data-l="en">Performance, Excellence, Mentoring, Leadership and government registrations</span></span>
         <span class="go"><span data-l="th">เปิดดู ↗</span><span data-l="en">Open ↗</span></span>
       </a></li>
       <li><a class="row" href="https://www.lifealignmentor.com/our-accreditations/" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">LA<img src="https://www.google.com/s2/favicons?domain=lifealignmentor.com&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">Life Alignmentor — Our Accreditations</span>
         <span class="meta"><span data-l="th">ใบรับรองด้าน Life Enrichment, Work Enhancement, Work &amp; Life Integration และการขึ้นทะเบียนภาครัฐ</span><span data-l="en">Life Enrichment, Work Enhancement, Work &amp; Life Integration and government registrations</span></span>
         <span class="go"><span data-l="th">เปิดดู ↗</span><span data-l="en">Open ↗</span></span>
@@ -584,11 +618,13 @@ footer p{margin:4px 0}
     <div class="group-title"><span data-l="th">ดุษฎีนิพนธ์และวิทยานิพนธ์</span><span data-l="en">Dissertation &amp; thesis</span></div>
     <ul class="reg">
       <li><a class="row" href="https://libdoc.dpu.ac.th/thesis/145837.pdf" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">DPU<img src="https://www.google.com/s2/favicons?domain=dpu.ac.th&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">คุณลักษณะขององค์การแห่งการเรียนรู้และผลต่อคุณภาพการบริการ: การศึกษาเชิงประจักษ์ของโรงพยาบาลในประเทศไทย</span>
         <span class="meta"><em>Characteristics of Learning Organization and its Impact on Service Quality: An Empirical Study of Hospitals in Thailand</em> · <span data-l="th">บริหารธุรกิจดุษฎีบัณฑิต มหาวิทยาลัยธุรกิจบัณฑิตย์ (พ.ศ. 2555)</span><span data-l="en">DBA dissertation, Dhurakij Pundit University (2012)</span></span>
         <span class="go"><span data-l="th">ฉบับเต็ม (PDF) ↗</span><span data-l="en">Full text (PDF) ↗</span></span>
       </a></li>
       <li><a class="row" href="https://digital.car.chula.ac.th/chulaetd/28129/" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">CU<img src="https://www.google.com/s2/favicons?domain=chula.ac.th&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">การศึกษาองค์ประกอบทางกายภาพของชุมชน เพื่อเสริมสร้างความเป็นเอกลักษณ์ของเมืองพัทยา <span class="badge">DOI</span></span>
         <span class="meta"><em>Study of Community’s Element for Enhancing the Identity of Pattaya City</em> · <span data-l="th">วิทยานิพนธ์การวางแผนภาคและเมืองมหาบัณฑิต สาขาการวางผังเมือง จุฬาลงกรณ์มหาวิทยาลัย (พ.ศ. 2539)</span><span data-l="en">Master’s thesis in Urban and Regional Planning, Chulalongkorn University (1996)</span></span>
         <span class="go"><span data-l="th">Chula ETD ↗</span><span data-l="en">Chula ETD ↗</span></span>
@@ -599,12 +635,14 @@ footer p{margin:4px 0}
     <div class="group-title"><span data-l="th">บทความวารสาร</span><span data-l="en">Journal articles</span></div>
     <ul class="reg">
       <li><a class="row" href="https://www.tci-thaijo.org/articles/social05-192436" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">TCI<img src="https://www.google.com/s2/favicons?domain=tci-thaijo.org&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">ลักษณะของผู้ซื้อ – ลักษณะเว็บไซต์ที่มีต่อการซื้อสินค้าทางอินเตอร์เน็ตในตลาดเกิดใหม่: การทบทวนวรรณกรรมและกรอบแนวคิดการวิจัย <span class="badge">TCI 2</span></span>
         <span class="meta"><em>Characteristics of buyers – Website characteristics affecting internet purchases in emerging markets</em> · <span data-l="th">วารสารวิชาการ สถาบันวิทยาการจัดการแห่งแปซิฟิค ปีที่ 5 ฉบับที่ 2 (ก.ค.–ธ.ค. 2562) หน้า 314–327 · TCI กลุ่มที่ 2 (มนุษยศาสตร์และสังคมศาสตร์) · Peer-reviewed</span><span data-l="en">Journal of Pacific Institute of Management Science, 5(2), July–December 2019, pp. 314–327 · TCI Tier 2 (Humanities &amp; Social Sciences) · Peer-reviewed</span></span>
         <span class="go"><span data-l="th">อ่านบทความ ↗</span><span data-l="en">Read ↗</span></span>
       </a>
       <p class="note"><a href="https://so05.tci-thaijo.org/index.php/pacific/issue/view/16289" target="_blank" rel="noopener"><span data-l="th">ดูสารบัญฉบับ Vol. 5 No. 2 (2019) ↗</span><span data-l="en">Issue table of contents, Vol. 5 No. 2 (2019) ↗</span></a></p></li>
       <li><a class="row" href="https://www.chonburi.spu.ac.th/journal/booksearch/upload/1260-99-107_characteristics.pdf" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">SPU<img src="https://www.google.com/s2/favicons?domain=spu.ac.th&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">คุณลักษณะขององค์การแห่งการเรียนรู้ และผลที่มีต่อคุณภาพการบริการของโรงพยาบาลในประเทศไทย <span class="badge">TCI 2</span></span>
         <span class="meta"><em>Characteristics of Learning Organization and Its Impact on Service Quality of Hospitals in Thailand</em> · <span data-l="th">วารสารวิชาการศรีปทุม ชลบุรี ปีที่ 9 ฉบับที่ 4 (เม.ย.–มิ.ย. 2556) หน้า 99–107 · TCI กลุ่มที่ 2 (มนุษยศาสตร์และสังคมศาสตร์) · Peer-reviewed</span><span data-l="en">Sripatum Chonburi Academic Journal, 9(4), April–June 2013, pp. 99–107 · TCI Tier 2 (Humanities &amp; Social Sciences) · Peer-reviewed</span></span>
         <span class="go"><span data-l="th">ฉบับเต็ม (PDF) ↗</span><span data-l="en">Full text (PDF) ↗</span></span>
@@ -615,6 +653,7 @@ footer p{margin:4px 0}
     <div class="group-title"><span data-l="th">หนังสือและสำนักพิมพ์</span><span data-l="en">Books &amp; publisher</span></div>
     <ul class="reg">
       <li><a class="row" href="https://www.mebmarket.com/?store=publisher&amp;action=home_page&amp;publisher_id=847391&amp;publisher_name=Life+Alignmentor+%E0%B9%82%E0%B8%94%E0%B8%A2+%E0%B8%94%E0%B8%A3.%E0%B8%A7%E0%B8%AA%E0%B8%B4%E0%B8%A9%E0%B8%90%E0%B9%8C+%E0%B8%9E%E0%B8%A3%E0%B8%AB%E0%B8%A1%E0%B8%9A%E0%B8%B8%E0%B8%95%E0%B8%A3" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">meb<img src="https://www.google.com/s2/favicons?domain=mebmarket.com&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org"><span data-l="th">สำนักพิมพ์ Life Alignmentor โดย ดร.วสิษฐ์ พรหมบุตร</span><span data-l="en">Life Alignmentor Publishing by Dr. Wasit Prombutr</span></span>
         <span class="meta"><span data-l="th">หนังสือและ e-book ของผู้เขียน · จำหน่ายบน MEB</span><span data-l="en">Books and e-books by the author · available on MEB</span></span>
         <span class="go"><span data-l="th">ดูหนังสือ ↗</span><span data-l="en">Browse books ↗</span></span>
@@ -624,12 +663,15 @@ footer p{margin:4px 0}
     <div class="group-title"><span data-l="th">คลังผลงานวิชาการออนไลน์</span><span data-l="en">Research profiles</span></div>
     <ul class="reg">
       <li><a class="row" href="https://orcid.org/0009-0004-3700-7211" target="_blank" rel="me noopener">
+        <span class="logo" aria-hidden="true">iD<img src="https://www.google.com/s2/favicons?domain=orcid.org&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">ORCID</span><span class="meta">0009-0004-3700-7211</span>
         <span class="go"><span data-l="th">ดูโปรไฟล์ ↗</span><span data-l="en">View ↗</span></span></a></li>
       <li><a class="row" href="https://independent.academia.edu/WasitPrombutr" target="_blank" rel="me noopener">
+        <span class="logo" aria-hidden="true">A<img src="https://www.google.com/s2/favicons?domain=academia.edu&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">Academia.edu</span><span class="meta"><span data-l="th">คลังบทความและงานนำเสนอในที่ประชุมวิชาการ</span><span data-l="en">Papers and conference presentations</span></span>
         <span class="go"><span data-l="th">ดูโปรไฟล์ ↗</span><span data-l="en">View ↗</span></span></a></li>
       <li><a class="row" href="https://www.researchgate.net/profile/Distinguished-Profdr-Wasit-Prombutr" target="_blank" rel="me noopener">
+        <span class="logo" aria-hidden="true">RG<img src="https://www.google.com/s2/favicons?domain=researchgate.net&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">ResearchGate</span><span class="meta"><span data-l="th">บทความ งานประชุมวิชาการ และข้อมูลการอ้างอิง</span><span data-l="en">Articles, conference papers and citation data</span></span>
         <span class="go"><span data-l="th">ดูโปรไฟล์ ↗</span><span data-l="en">View ↗</span></span></a></li>
     </ul>
@@ -641,22 +683,26 @@ footer p{margin:4px 0}
     <p class="sub"><span data-l="th">รางวัลระดับนานาชาติและบทความที่เผยแพร่ พร้อมลิงก์ไปยังแหล่งต้นทาง</span><span data-l="en">International recognition and published articles, linked to the original sources</span></p>
     <ul class="reg">
       <li><a class="row" href="https://the-european.eu/global-business-awards-2024-2" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">TE<img src="https://www.google.com/s2/favicons?domain=the-european.eu&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">The European Global Business Awards 2024 <span class="badge">2024</span></span>
         <span class="meta">Best Management Consultant &amp; Growth Strategy CEO of the Year (Dr Wasit Prombutr) – Thailand<br>Best Management Development &amp; Corporate Consultancy – Thailand <span data-l="th">(10X Consulting &amp; Life Alignmentor)</span><span data-l="en">(10X Consulting &amp; Life Alignmentor)</span></span>
         <span class="go"><span data-l="th">รายชื่อผู้ได้รับรางวัล ↗</span><span data-l="en">Winners list ↗</span></span>
       </a></li>
       <li><a class="row" href="https://10-xconsulting.com/wp-content/uploads/2024/05/CEO-Today-Magazine-Interview-with-Dr.Wasit-Prombutr.pdf" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">10X<img src="https://www.google.com/s2/favicons?domain=10-xconsulting.com&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">CEO Today Global Awards 2024 <span class="badge">2024</span></span>
         <span class="meta">Management Development Consultant of the Year – Thailand · <span data-l="th">บทสัมภาษณ์ใน CEO Today Magazine (PDF)</span><span data-l="en">CEO Today Magazine interview (PDF)</span></span>
         <span class="go"><span data-l="th">อ่านบทสัมภาษณ์ ↗</span><span data-l="en">Read interview ↗</span></span>
       </a>
       <p class="note"><a href="https://www.ceotodaymagazine.com/" target="_blank" rel="noopener">ceotodaymagazine.com ↗</a></p></li>
       <li><a class="row" href="https://www.corporatevision-news.com/issues/corporate-coaching-and-recruitment-awards-2023/24/" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">CV<img src="https://www.google.com/s2/favicons?domain=corporatevision-news.com&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">Corporate Vision — Corporate Coaching &amp; Recruitment Awards 2023 <span class="badge">2023</span></span>
         <span class="meta">Global Leadership &amp; Team Coach of the Year 2023 (Thailand): Dr. Wasit Prombutr</span>
         <span class="go"><span data-l="th">ดูหน้านิตยสาร ↗</span><span data-l="en">View issue ↗</span></span>
       </a></li>
       <li><a class="row" href="https://www.forbes.com/councils/forbescoachescouncil/people/wasitprombutr/" target="_blank" rel="noopener">
+        <span class="logo" aria-hidden="true">F<img src="https://www.google.com/s2/favicons?domain=forbes.com&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span>
         <span class="org">Forbes Coaches Council — <span data-l="th">หน้าผู้เขียนบน Forbes.com</span><span data-l="en">Forbes.com author page</span></span>
         <span class="meta"><span data-l="th">บทความ 3 เรื่อง (2023) เช่น “Using Objectives And Key Results Coaching To Support High-Potential Employees”</span><span data-l="en">3 articles (2023), incl. “Using Objectives And Key Results Coaching To Support High-Potential Employees”</span></span>
         <span class="go"><span data-l="th">อ่านบทความ ↗</span><span data-l="en">Read articles ↗</span></span>
@@ -699,10 +745,10 @@ footer p{margin:4px 0}
     <h2>DECHRIT GROUP</h2>
     <p class="sub"><span data-l="th">ระบบนิเวศ 4 เสาหลัก</span><span data-l="en">Four core pillars</span></p>
     <div class="grid2">
-      <div class="card pillar"><h3><a href="https://www.10-xconsulting.com/" target="_blank" rel="noopener">10X Consulting ↗</a></h3><p><span data-l="th">ที่ปรึกษาด้านการบริหารและการเปลี่ยนแปลงเชิงกลยุทธ์ระดับองค์กร</span><span data-l="en">Enterprise-grade management consulting and strategic transformation</span></p></div>
-      <div class="card pillar"><h3><a href="https://www.lifealignmentor.com/" target="_blank" rel="noopener">Life Alignmentor ↗</a></h3><p><span data-l="th">โค้ชและเมนทอร์ผู้บริหารระดับสูง และการยกระดับผลการปฏิบัติงานเชิงพฤติกรรม</span><span data-l="en">C-suite executive coaching, mentoring and behavioral performance optimization</span></p></div>
-      <div class="card pillar"><h3>OKR Academy Thailand</h3><p><span data-l="th">การบริหารมุ่งผลสัมฤทธิ์และการนำ OKR ไปใช้เพื่อความคล่องตัว</span><span data-l="en">Results-Based Management and OKR implementation for agility</span></p></div>
-      <div class="card pillar"><h3>UrbanPreneur</h3><p><span data-l="th">การพัฒนาเมือง เมืองแห่งการเรียนรู้ และเศรษฐกิจสร้างสรรค์ที่เปลี่ยนมรดกท้องถิ่นเป็นพลังเศรษฐกิจ</span><span data-l="en">Urban development, Learning Cities and creative-economy frameworks that turn local heritage into economic drivers</span></p></div>
+      <div class="card pillar"><h3 class="ph"><span class="logo" aria-hidden="true">10X<img src="https://www.google.com/s2/favicons?domain=10-xconsulting.com&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span><a href="https://www.10-xconsulting.com/" target="_blank" rel="noopener">10X Consulting ↗</a></h3><p><span data-l="th">ที่ปรึกษาด้านการบริหารและการเปลี่ยนแปลงเชิงกลยุทธ์ระดับองค์กร</span><span data-l="en">Enterprise-grade management consulting and strategic transformation</span></p></div>
+      <div class="card pillar"><h3 class="ph"><span class="logo" aria-hidden="true">LA<img src="https://www.google.com/s2/favicons?domain=lifealignmentor.com&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"></span><a href="https://www.lifealignmentor.com/" target="_blank" rel="noopener">Life Alignmentor ↗</a></h3><p><span data-l="th">โค้ชและเมนทอร์ผู้บริหารระดับสูง และการยกระดับผลการปฏิบัติงานเชิงพฤติกรรม</span><span data-l="en">C-suite executive coaching, mentoring and behavioral performance optimization</span></p></div>
+      <div class="card pillar"><h3 class="ph"><span class="logo" aria-hidden="true">OKR</span>OKR Academy Thailand</h3><p><span data-l="th">การบริหารมุ่งผลสัมฤทธิ์และการนำ OKR ไปใช้เพื่อความคล่องตัว</span><span data-l="en">Results-Based Management and OKR implementation for agility</span></p></div>
+      <div class="card pillar"><h3 class="ph"><span class="logo" aria-hidden="true">UP</span>UrbanPreneur</h3><p><span data-l="th">การพัฒนาเมือง เมืองแห่งการเรียนรู้ และเศรษฐกิจสร้างสรรค์ที่เปลี่ยนมรดกท้องถิ่นเป็นพลังเศรษฐกิจ</span><span data-l="en">Urban development, Learning Cities and creative-economy frameworks that turn local heritage into economic drivers</span></p></div>
     </div>
   </section>
 
@@ -735,7 +781,7 @@ footer p{margin:4px 0}
 
   <footer>
     <p><span data-l="th">ชื่อที่อาจพบในการสะกดแบบอื่น</span><span data-l="en">Also spelled</span>: วสิษฐ พรหมบุตร · ดร.วิสิษฐ์ พรหมบุตร · วิสิษฐ์ พรหมบุตร · Dr. Wasit Promburt · Wasit Promburt · Dr. Wisit Promburt · Wisit Promburt</p>
-    <p><span data-l="th">ปรับปรุงล่าสุด</span><span data-l="en">Last updated</span>: <time datetime="2026-11-13">13 Nov 2026</time></p>
+    <p><span data-l="th">ปรับปรุงล่าสุด</span><span data-l="en">Last updated</span>: <time datetime="2026-11-18">18 Nov 2026</time></p>
   </footer>
 </div>
 
